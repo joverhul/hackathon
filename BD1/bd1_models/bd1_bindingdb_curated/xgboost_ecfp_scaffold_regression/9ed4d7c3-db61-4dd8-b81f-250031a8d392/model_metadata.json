@@ -1,0 +1,191 @@
+{
+    "ecfp_specific": {
+        "ecfp_radius": 2,
+        "ecfp_size": 1024
+    },
+    "model_parameters": {
+        "ampl_version": "1.6.0",
+        "class_number": 2,
+        "featurizer": "ecfp",
+        "hyperparam_uuid": null,
+        "model_bucket": "public",
+        "model_choice_score_type": "r2",
+        "model_type": "xgboost",
+        "num_model_tasks": 1,
+        "prediction_type": "regression",
+        "save_results": false,
+        "system": "twintron-blue",
+        "time_generated": 1721070278.2689743,
+        "transformer_bucket": "",
+        "transformer_key": "./BD1/bd1_models/bd1_bindingdb_curated/xgboost_ecfp_scaffold_regression/9ed4d7c3-db61-4dd8-b81f-250031a8d392/transformers.pkl",
+        "transformer_oid": "",
+        "transformers": true,
+        "uncertainty": false
+    },
+    "model_uuid": "9ed4d7c3-db61-4dd8-b81f-250031a8d392",
+    "splitting_parameters": {
+        "base_splitter": "scaffold",
+        "butina_cutoff": 0.6,
+        "cutoff_date": null,
+        "date_col": null,
+        "mtss_num_generations": 20,
+        "mtss_num_pop": 100,
+        "mtss_num_super_scaffolds": 40,
+        "mtss_split_fraction_weight": 1.0,
+        "mtss_train_test_dist_weight": 1.0,
+        "mtss_train_valid_dist_weight": 1.0,
+        "num_folds": 5,
+        "previously_split": true,
+        "split_strategy": "train_valid_test",
+        "split_test_frac": 0.1,
+        "split_uuid": "800f7215-04df-4f9c-ada2-8a4ffdd54571",
+        "split_valid_frac": 0.1,
+        "splitter": "scaffold"
+    },
+    "time_built": 1721070278.2700312,
+    "training_dataset": {
+        "bucket": "public",
+        "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+        "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+        "dataset_metadata": {},
+        "dataset_oid": null,
+        "datastore": false,
+        "external_export_parameters": {
+            "result_dir": "./BD1/bd1_models"
+        },
+        "feature_transform_type": "normalization",
+        "id_col": "compound_id",
+        "production": false,
+        "response_cols": [
+            "avg_pic50"
+        ],
+        "response_transform_type": "normalization",
+        "smiles_col": "base_rdkit_smiles"
+    },
+    "training_metrics": [
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles"
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "9ed4d7c3-db61-4dd8-b81f-250031a8d392",
+            "prediction_results": {
+                "mae_score": 0.21081030569917258,
+                "mean_response_vals": [
+                    6.825499837909217
+                ],
+                "num_compounds": 1200,
+                "r2_score": 0.8642302586413786,
+                "rms_score": 0.3232581826633525,
+                "std_response_vals": [
+                    0.8772998027055944
+                ]
+            },
+            "subset": "train",
+            "time_run": 1721070278.2715855
+        },
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles"
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "9ed4d7c3-db61-4dd8-b81f-250031a8d392",
+            "prediction_results": {
+                "mae_score": 0.38277517051474025,
+                "mean_response_vals": [
+                    6.738715395631163
+                ],
+                "model_choice_score": 0.6661155074750719,
+                "num_compounds": 257,
+                "r2_score": 0.6661155074750719,
+                "rms_score": 0.5317127292691007,
+                "std_response_vals": [
+                    0.9201930170809631
+                ]
+            },
+            "subset": "valid",
+            "time_run": 1721070278.2715867
+        },
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles"
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "9ed4d7c3-db61-4dd8-b81f-250031a8d392",
+            "prediction_results": {
+                "mae_score": 0.44087217881585405,
+                "mean_response_vals": [
+                    6.5477632601221
+                ],
+                "num_compounds": 258,
+                "r2_score": 0.7481940052875885,
+                "rms_score": 0.582819439141828,
+                "std_response_vals": [
+                    1.1614512777262893
+                ]
+            },
+            "subset": "test",
+            "time_run": 1721070278.2715874
+        }
+    ],
+    "xgb_specific": {
+        "xgb_colsample_bytree": 1.0,
+        "xgb_gamma": 0.1764681892023552,
+        "xgb_learning_rate": 0.16201292760394037,
+        "xgb_max_depth": 6,
+        "xgb_min_child_weight": 1.0,
+        "xgb_n_estimators": 100,
+        "xgb_subsample": 1.0
+    }
+}

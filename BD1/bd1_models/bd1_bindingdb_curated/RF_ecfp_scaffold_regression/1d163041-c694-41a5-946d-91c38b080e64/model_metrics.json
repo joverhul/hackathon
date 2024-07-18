@@ -1,0 +1,117 @@
+[
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD1/bd1_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles"
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "1d163041-c694-41a5-946d-91c38b080e64",
+        "prediction_results": {
+            "mae_score": 0.2748349080164807,
+            "mean_response_vals": [
+                6.825499837909217
+            ],
+            "num_compounds": 1200,
+            "r2_score": 0.7618787926786219,
+            "rms_score": 0.42810181551240606,
+            "std_response_vals": [
+                0.8772998027055944
+            ]
+        },
+        "subset": "train",
+        "time_run": 1721069055.5592918
+    },
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD1/bd1_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles"
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "1d163041-c694-41a5-946d-91c38b080e64",
+        "prediction_results": {
+            "mae_score": 0.39287339883114414,
+            "mean_response_vals": [
+                6.738715395631163
+            ],
+            "model_choice_score": 0.6300880963093951,
+            "num_compounds": 257,
+            "r2_score": 0.6300880963093951,
+            "rms_score": 0.5596649210073873,
+            "std_response_vals": [
+                0.9201930170809631
+            ]
+        },
+        "subset": "valid",
+        "time_run": 1721069055.5592933
+    },
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD1/bd1_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles"
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "1d163041-c694-41a5-946d-91c38b080e64",
+        "prediction_results": {
+            "mae_score": 0.471177161075786,
+            "mean_response_vals": [
+                6.5477632601221
+            ],
+            "num_compounds": 258,
+            "r2_score": 0.7386520630444129,
+            "rms_score": 0.59375944927255,
+            "std_response_vals": [
+                1.1614512777262893
+            ]
+        },
+        "subset": "test",
+        "time_run": 1721069055.5592937
+    }
+]

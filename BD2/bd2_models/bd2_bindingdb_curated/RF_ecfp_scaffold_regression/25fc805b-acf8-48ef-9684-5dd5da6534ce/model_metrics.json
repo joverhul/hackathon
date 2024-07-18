@@ -1,0 +1,120 @@
+[
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "0e66d0ce36dc897f5af2c3817691ab98",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD2/bd2_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD2/bd2_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles",
+            "weight_transform_type": null
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "25fc805b-acf8-48ef-9684-5dd5da6534ce",
+        "prediction_results": {
+            "mae_score": 0.2093967999299085,
+            "mean_response_vals": [
+                7.016078873198102
+            ],
+            "num_compounds": 997,
+            "r2_score": 0.6942892311666995,
+            "rms_score": 0.3345651343815176,
+            "std_response_vals": [
+                0.6050974347173378
+            ]
+        },
+        "subset": "train",
+        "time_run": 1721176350.392101
+    },
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "0e66d0ce36dc897f5af2c3817691ab98",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD2/bd2_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD2/bd2_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles",
+            "weight_transform_type": null
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "25fc805b-acf8-48ef-9684-5dd5da6534ce",
+        "prediction_results": {
+            "mae_score": 0.2868958825029873,
+            "mean_response_vals": [
+                6.898478484045691
+            ],
+            "model_choice_score": 0.5650115014352661,
+            "num_compounds": 214,
+            "r2_score": 0.5650115014352661,
+            "rms_score": 0.48221182394953477,
+            "std_response_vals": [
+                0.7311373463827612
+            ]
+        },
+        "subset": "valid",
+        "time_run": 1721176350.3921022
+    },
+    {
+        "input_dataset": {
+            "bucket": "public",
+            "dataset_hash": "0e66d0ce36dc897f5af2c3817691ab98",
+            "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD2/bd2_bindingdb_curated.csv",
+            "dataset_metadata": {},
+            "dataset_oid": null,
+            "datastore": false,
+            "external_export_parameters": {
+                "result_dir": "./BD2/bd2_models"
+            },
+            "feature_transform_type": "normalization",
+            "id_col": "compound_id",
+            "production": false,
+            "response_cols": [
+                "avg_pic50"
+            ],
+            "response_transform_type": "normalization",
+            "smiles_col": "base_rdkit_smiles",
+            "weight_transform_type": null
+        },
+        "label": "best",
+        "metrics_type": "training",
+        "model_uuid": "25fc805b-acf8-48ef-9684-5dd5da6534ce",
+        "prediction_results": {
+            "mae_score": 0.4103044673392203,
+            "mean_response_vals": [
+                6.751796521577604
+            ],
+            "num_compounds": 214,
+            "r2_score": 0.02977213483442731,
+            "rms_score": 0.6161415212519398,
+            "std_response_vals": [
+                0.6255234634437126
+            ]
+        },
+        "subset": "test",
+        "time_run": 1721176350.3921027
+    }
+]

@@ -1,0 +1,193 @@
+{
+    "descriptor_specific": {
+        "descriptor_bucket": "public",
+        "descriptor_key": null,
+        "descriptor_type": "rdkit_raw"
+    },
+    "model_parameters": {
+        "ampl_version": "1.6.1",
+        "class_number": 2,
+        "featurizer": "computed_descriptors",
+        "hyperparam_uuid": null,
+        "model_bucket": "public",
+        "model_choice_score_type": "r2",
+        "model_type": "RF",
+        "num_model_tasks": 1,
+        "prediction_type": "regression",
+        "save_results": false,
+        "system": "twintron-blue",
+        "time_generated": 1721078881.4430723,
+        "transformer_bucket": "",
+        "transformer_key": "./BD1/bd1_models/bd1_bindingdb_curated/RF_computed_descriptors_scaffold_regression/607f3d5f-0aaa-4a38-a47a-6ae1e62c05b6/transformers.pkl",
+        "transformer_oid": "",
+        "transformers": true,
+        "uncertainty": true
+    },
+    "model_uuid": "607f3d5f-0aaa-4a38-a47a-6ae1e62c05b6",
+    "rf_specific": {
+        "rf_estimators": 301,
+        "rf_max_depth": 20,
+        "rf_max_features": 10
+    },
+    "splitting_parameters": {
+        "base_splitter": "scaffold",
+        "butina_cutoff": 0.6,
+        "cutoff_date": null,
+        "date_col": null,
+        "mtss_num_generations": 20,
+        "mtss_num_pop": 100,
+        "mtss_num_super_scaffolds": 40,
+        "mtss_response_distr_weight": 1.0,
+        "mtss_split_fraction_weight": 1.0,
+        "mtss_train_test_dist_weight": 1.0,
+        "mtss_train_valid_dist_weight": 1.0,
+        "num_folds": 5,
+        "previously_split": true,
+        "split_strategy": "train_valid_test",
+        "split_test_frac": 0.1,
+        "split_uuid": "800f7215-04df-4f9c-ada2-8a4ffdd54571",
+        "split_valid_frac": 0.1,
+        "splitter": "scaffold"
+    },
+    "time_built": 1721078881.4442806,
+    "training_dataset": {
+        "bucket": "public",
+        "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+        "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+        "dataset_metadata": {},
+        "dataset_oid": null,
+        "datastore": false,
+        "external_export_parameters": {
+            "result_dir": "./BD1/bd1_models"
+        },
+        "feature_transform_type": "normalization",
+        "id_col": "compound_id",
+        "production": false,
+        "response_cols": [
+            "avg_pic50"
+        ],
+        "response_transform_type": "normalization",
+        "smiles_col": "base_rdkit_smiles",
+        "weight_transform_type": null
+    },
+    "training_metrics": [
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles",
+                "weight_transform_type": null
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "607f3d5f-0aaa-4a38-a47a-6ae1e62c05b6",
+            "prediction_results": {
+                "mae_score": 0.15821389221399645,
+                "mean_response_vals": [
+                    6.825499837909218
+                ],
+                "num_compounds": 1200,
+                "r2_score": 0.9028733569559493,
+                "rms_score": 0.2734117791833422,
+                "std_response_vals": [
+                    0.8772998027055944
+                ]
+            },
+            "subset": "train",
+            "time_run": 1721078881.445934
+        },
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles",
+                "weight_transform_type": null
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "607f3d5f-0aaa-4a38-a47a-6ae1e62c05b6",
+            "prediction_results": {
+                "mae_score": 0.42753401371969696,
+                "mean_response_vals": [
+                    6.738715395631163
+                ],
+                "model_choice_score": 0.5670923827520596,
+                "num_compounds": 257,
+                "r2_score": 0.5670923827520596,
+                "rms_score": 0.6054475791724379,
+                "std_response_vals": [
+                    0.9201930170809631
+                ]
+            },
+            "subset": "valid",
+            "time_run": 1721078881.445935
+        },
+        {
+            "input_dataset": {
+                "bucket": "public",
+                "dataset_hash": "f52f04d3a9612dddb8615bce432cb11b",
+                "dataset_key": "/mnt/projects/ATOM/overhulsejm/hackathon_problem/BD1/bd1_bindingdb_curated.csv",
+                "dataset_metadata": {},
+                "dataset_oid": null,
+                "datastore": false,
+                "external_export_parameters": {
+                    "result_dir": "./BD1/bd1_models"
+                },
+                "feature_transform_type": "normalization",
+                "id_col": "compound_id",
+                "production": false,
+                "response_cols": [
+                    "avg_pic50"
+                ],
+                "response_transform_type": "normalization",
+                "smiles_col": "base_rdkit_smiles",
+                "weight_transform_type": null
+            },
+            "label": "best",
+            "metrics_type": "training",
+            "model_uuid": "607f3d5f-0aaa-4a38-a47a-6ae1e62c05b6",
+            "prediction_results": {
+                "mae_score": 0.5558387194999073,
+                "mean_response_vals": [
+                    6.5477632601221
+                ],
+                "num_compounds": 258,
+                "r2_score": 0.6277088228221573,
+                "rms_score": 0.7086672584823358,
+                "std_response_vals": [
+                    1.1614512777262893
+                ]
+            },
+            "subset": "test",
+            "time_run": 1721078881.4459357
+        }
+    ]
+}
